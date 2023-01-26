@@ -116,15 +116,3 @@ async def main():
 if __name__ == "__main__":
     asyncio.run(main())
 
-"""
-loop = asyncio.get_event_loop()
-
-tasks = [
-    asyncio.async(func_normal()),
-    asyncio.async(func_infinite())]
-
-done, _ = loop.run_until_complete(asyncio.wait(tasks))
-for fut in done:
-    print("return value is {}".format(fut.result()))
-loop.close()
-"""
